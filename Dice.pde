@@ -2,8 +2,6 @@
 int ledPins[7] = {2,3,4,5,6,7,8};
 int blank = 6;
 
-int ledPin = 13;
-
 int dicePatterns[7][7] = {
   {0,0,0,0,0,0,1}, //1
   {0,0,1,1,0,0,}, //2
@@ -71,7 +69,6 @@ void playResult() {
   }
 }
   
-
 void loop()
 {
   if(digitalRead(buttonPin))
@@ -80,7 +77,6 @@ void loop()
     diceRoll(); 
     digitalWrite(ledPin, LOW);
   }
-
 }
 
 void diceRoll()
